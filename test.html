@@ -1,0 +1,49 @@
+<div class="class1">
+    <p class="class2">This is styled by .class1 .class2</p>
+</div>
+<p class="class2">This is NOT styled by .class1 .class2</p>
+
+
+
+<div class="class3">
+    <p class="class4">This is styled by nested .class3 .class4</p>
+</div>
+
+<div class="class5">This is styled by .class1</div>
+<p class="class6">This is styled by .class2</p>
+
+
+<div class="class-a class-b">This is a div with both class-a and class-b</div>
+<div class="class-a">This is a div with only class-a</div>
+<div class="class-b">This is a div with only class-b</div>
+
+
+<style>
+.class1 .class2 {
+    color: red;
+}
+
+.class3 {
+    .class4 {
+        color: blue;
+    }
+}
+
+.class5, .class6 {
+    color: green;
+}
+.class-a {
+  background-color: yellow;
+}
+
+.class-b {
+  color: red;
+}
+
+/* Targets elements that have both class-a and class-b */
+.class-a.class-b {
+  background-color: green;
+  color: white;
+}
+
+</style>
